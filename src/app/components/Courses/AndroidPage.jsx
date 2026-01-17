@@ -359,12 +359,12 @@ export default function AndroidPage() {
 
             <div className="hero-buttons">
                 <NavLink
-                              to="/contact-us"
-                              className="btn-primary"
-                              style={{ textDecoration: "none" }}
-                            >
-                              Download Syllabus
-                            </NavLink>
+                to="/contact-form"
+                className="btn-primary"
+                style={{ textDecoration: "none" }}
+              >
+                Download Syllabus
+              </NavLink>
               
                     
                             <NavLink
@@ -951,7 +951,7 @@ export default function AndroidPage() {
           </Row>
         </Container>
       </section>
-      <SocialButtons />
+      {/* <SocialButtons /> */}
 
       {/* ===== CTA ===== */}
       <section className="cta-section text-center">

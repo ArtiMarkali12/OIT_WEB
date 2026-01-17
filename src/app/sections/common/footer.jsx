@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import axios from "axios";
+import {
+  FaWhatsapp,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 const API = process.env.REACT_APP_API_BASE_URL;
 const DOMAIN = process.env.REACT_APP_DOMAIN;
@@ -92,6 +99,11 @@ export default function Footer() {
           </ul>
         </div>
 
+
+
+
+
+
         {/* CONTACT */}
         <div className="footer-col">
           <h4>Contact</h4>
@@ -124,13 +136,52 @@ export default function Footer() {
       </div>
 
       {/* FLOATING BUTTONS */}
+
       <div className="floating-buttons">
+        <div className="social-buttons">
+          {/* <a href="https://wa.me/9975708774" target="_blank" rel="noopener noreferrer" className="social-btn whatsapp">
+          <FaWhatsapp />
+        </a> */}
+          <a
+            href="https://www.facebook.com/orangeitech/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-btn facebook"
+          >
+            <FaFacebookF />
+          </a>
+          <a
+            href="https://www.instagram.com/orangeitech/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-btn instagram"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://www.youtube.com/@Orangeitech"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-btn youtube"
+          >
+            <FaYoutube />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/orange-itech-intstitue/?originalSubdomain=in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-btn linkedin"
+          >
+            <FaLinkedinIn />
+          </a>
+        </div>
+
         {/* WhatsApp */}
         {contactInfo?.phones?.[0] && (
           <a
             href={`https://wa.me/91${contactInfo.phones[0].replace(
               /\D/g,
-              ""
+              "",
             )}?text=Hello%20I%20want%20to%20enquire`}
             target="_blank"
             rel="noreferrer"

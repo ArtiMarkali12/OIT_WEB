@@ -53,6 +53,9 @@ import Careers from "../app/components/Careers/Careers";
 import Placement from "../app/components/Placement/Placement";
 import SectionOurInfo1 from "../app/sections/company/why-choose-us/section-our-info1";
 import SectionWhyChooseUs1 from "../app/sections/home/index/section-why-choose-us1";
+import ContactFormPage from "../app/components/contactForm/ContactFormPage";
+import SyllabusDownload from "../app/components/syllabus/SyllabusDownload";
+
 
 
 
@@ -84,6 +87,13 @@ function AppRoutes() {
       <Route path="/placement" element={<Placement />} />
       <Route path="/sectionOurInfo1" element={<SectionOurInfo1 />} />
       <Route path="/SectionWhyChooseUs1" element={<SectionWhyChooseUs1 />} />
+      
+      <Route path="/contact-form" element={<ContactFormPage/>} />
+
+      <Route path="/syllabus-download" element={<SyllabusDownload/>} />
+
+
+
 
       {/* COURSES */}
       <Route

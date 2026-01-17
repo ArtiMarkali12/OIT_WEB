@@ -303,13 +303,13 @@ export default function CProgrammingPage() {
             </p>
 
             <div className="hero-buttons">
-                <NavLink
-                              to="/contact-us"
-                              className="btn-primary"
-                              style={{ textDecoration: "none" }}
-                            >
-                              Download Syllabus
-                            </NavLink>
+                 <NavLink
+                                to="/contact-form"
+                                className="btn-primary"
+                                style={{ textDecoration: "none" }}
+                              >
+                                Download Syllabus
+                              </NavLink>
               
                     
                             <NavLink
@@ -837,7 +837,7 @@ export default function CProgrammingPage() {
           </Row>
         </Container>
       </section>
-      <SocialButtons />
+      {/* <SocialButtons /> */}
 
       {/* ===== CTA ===== */}
       <section className="cta-section text-center">

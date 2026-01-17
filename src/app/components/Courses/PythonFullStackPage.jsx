@@ -533,7 +533,7 @@ export default function PythonFullStackPage() {
 
             <div className="hero-buttons">
               <NavLink
-                             to="/contact-us"
+                             to="/contact-form"
                              className="btn-primary"
                              style={{ textDecoration: "none" }}
                            >
@@ -1087,7 +1087,7 @@ export default function PythonFullStackPage() {
           </Row>
         </Container>
       </section>
-      <SocialButtons />
+      {/* <SocialButtons /> */}
 
       {/* ===== CTA ===== */}
       <section className="cta-section text-center">
