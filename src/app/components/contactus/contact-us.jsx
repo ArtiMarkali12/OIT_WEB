@@ -21,6 +21,9 @@ function ContactUsPage() {
   const [contactInfo, setContactInfo] = useState(null);
   const [loading1, setLoading1] = useState(true);
 
+
+  
+
   /* ================= FETCH CONTACT INFO ================= */
   useEffect(() => {
     const fetchContactInfo = async () => {

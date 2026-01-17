@@ -5,9 +5,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 // import CertificateImg from "../../assets/images/courses/CertificateImg.jpg";
 // import { bannerData } from "../../../globals/banner";
 import { publicUrlFor } from "../../../globals/constants";
-
-
-
+import { NavLink } from "react-router-dom";
 
 import {
   FaUserGraduate,
@@ -623,20 +621,37 @@ export default function JavaFullStackPage() {
             </p>
 
             <div className="hero-buttons">
-              <a
+              {/* <a
                 href="/contact-us"
                 className="btn-primary"
                 style={{ textDecoration: "none" }}
               >
                 Download Syllabus
-              </a>
-              <a
+              </a> */}
+
+              <NavLink
+                to="/contact-us"
+                className="btn-primary"
+                style={{ textDecoration: "none" }}
+              >
+                Download Syllabus
+              </NavLink>
+
+              {/* <a
                 href="/contact-us"
                 className="btn-outline"
                 style={{ textDecoration: "none" }}
               >
                 Enroll Now
-              </a>
+              </a> */}
+
+              <NavLink
+                to="/contact-us"
+                className="btn-outline"
+                style={{ textDecoration: "none" }}
+              >
+                Enroll Now
+              </NavLink>
             </div>
           </div>
 
@@ -692,13 +707,11 @@ export default function JavaFullStackPage() {
         <Container>
           <Row className="align-items-center">
             {/* LEFT CONTENT */}
-             <h2 className="angular-title">
-                About the Full Stack Development Training Course
-              </h2>
+            <h2 className="angular-title">
+              About the Full Stack Development Training Course
+            </h2>
 
             <Col lg={6} md={6} className="about-content-col">
-             
-
               <p>
                 At Orange ITech, we offer a comprehensive and industry-relevant
                 Java Full Stack Development Course designed to help learners
@@ -725,12 +738,10 @@ export default function JavaFullStackPage() {
               <div className="about-image-bg ">
                 {/* <img src={JavaImg} alt="About Course" className="about-image" /> */}
                 <img
-    src={publicUrlFor("images/courses/JavaImg.jpg")}
-    alt="Java Course Image"
-    className="gallery-image"
-  />
-
-
+                  src={publicUrlFor("images/courses/JavaImg.jpg")}
+                  alt="Java Course Image"
+                  className="gallery-image"
+                />
               </div>
             </Col>
           </Row>
@@ -1173,15 +1184,11 @@ export default function JavaFullStackPage() {
             {/* LEFT: CERTIFICATE IMAGE */}
             <Col lg={6} md={12} className="text-center mb-4 mb-lg-0">
               <div className="certificate-image-wrapper">
-
-                
- <img
+                <img
                   src={publicUrlFor("images/courses/CertificateImg.jpg")}
                   alt="Java Course Image"
                   className="gallery-image"
                 />
-                  
-                 
               </div>
             </Col>
 
@@ -1213,9 +1220,17 @@ export default function JavaFullStackPage() {
       {/* ===== CTA ===== */}
       <section className="cta-section text-center">
         <h2>Start Your IT Career Today</h2>
-        <a href="/contact-us" className="btn btn-primary cta-btn">
+        {/* <a href="/contact-us" className="btn btn-primary cta-btn">
           Book Free Demo
-        </a>
+        </a> */}
+
+        <NavLink
+          to="/contact-us"
+          onClick={() => alert("clicked")}
+          className="btn btn-primary cta-btn"
+        >
+          Book Free Demo
+        </NavLink>
       </section>
     </div>
   );

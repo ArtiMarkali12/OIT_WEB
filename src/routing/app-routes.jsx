@@ -54,6 +54,9 @@ import Placement from "../app/components/Placement/Placement";
 import SectionOurInfo1 from "../app/sections/company/why-choose-us/section-our-info1";
 import SectionWhyChooseUs1 from "../app/sections/home/index/section-why-choose-us1";
 
+
+
+
 function AppRoutes() {
   return (
     <Routes>
